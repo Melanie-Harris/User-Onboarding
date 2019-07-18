@@ -4,8 +4,10 @@ import FormData from './FormData';
 
 function App() {
   return (
-    <div className="App">
-      <FormData />
+    <div ClassName="conatiner">
+      <div className="App">
+        <FormData />
+      </div>
     </div>
   );
 }

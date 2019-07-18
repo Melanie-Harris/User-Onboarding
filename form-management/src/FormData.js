@@ -7,19 +7,23 @@ function FormData({values, errors, touched}) {
     return (
         <Form>
             <div>
-                <br/>
+                <h1>Create New User</h1>
+                
                 Full Name: &nbsp;
                 <Field type="text" name="name" placeholder="Insert Name Here" />
+                
             </div>
             <div>
                 Email: &nbsp;
             {touched.email &&  errors.email && <p> {errors.email}</p>}
                 <Field type="email" name="email" placeholder=" Insert Email Here" />
+                
             </div>
             <div>
                 Password: &nbsp;
                 {touched.password &&  errors.password &&<p> {errors.password}</p>}
                 <Field type="password" name="password" placeholder=" Insert Password Here" />
+                <p />
             </div>
             <br/>
             <div>
@@ -59,7 +63,7 @@ const FormikFormData = withFormik({
         } else {
             axios
                 .post("_https://reqres.in/api/users_", values)
-                console.log(values)
+                // console.log(values)
                 .then(res => {
                     console.log(res); 
                     resetForm();

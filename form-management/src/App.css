@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  /* background-image: url("https://images.pexels.com/photos/2310641/pexels-photo-2310641.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
+  margin-top: 20%;
+  background-color: lightgrey;
+  height: 30%;
+  padding: 2%;
+  padding-top: 3%;
+  align-content:  center;
+}
+
+.container{
+  
 }
 
 .App-logo {
