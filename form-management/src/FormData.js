@@ -9,18 +9,18 @@ function FormData({values, errors, touched}) {
             <div>
                 <h1>Create New User</h1>
                 
-                Full Name: &nbsp;
+                Full Name:&nbsp;&nbsp;
                 <Field type="text" name="name" placeholder="Insert Name Here" />
                 
             </div>
             <div>
-                Email: &nbsp;
+                Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             {touched.email &&  errors.email && <p> {errors.email}</p>}
                 <Field type="email" name="email" placeholder=" Insert Email Here" />
                 
             </div>
             <div>
-                Password: &nbsp;
+                Password: &nbsp;&nbsp;
                 {touched.password &&  errors.password &&<p> {errors.password}</p>}
                 <Field type="password" name="password" placeholder=" Insert Password Here" />
                 <p />
